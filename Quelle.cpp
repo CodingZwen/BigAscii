@@ -1257,7 +1257,7 @@ string createBigAscii(string word) {
 
 
 	string s[5];//ausgabestrings
-	const char whitespace = ' ';//breite 4 für ein buchstabe
+	const char whitespace = ' ';//breite 4 fÃ¼r ein buchstabe
 
 								//strings bearbeiten
 
@@ -1331,7 +1331,7 @@ void AsciiToFile(string filecontent) {
 	ziel.open("asciiii.asc", ios::out);
 
 
-	if (!ziel) { printf("asciidatei konnte nicht geöffnet werden!\n"); exit(-1); }
+	if (!ziel) { printf("asciidatei konnte nicht geÃ¶ffnet werden!\n"); exit(-1); }
 
 	ziel.width(20); //formatiertes schreiben -> groesse der zeile bzw. breite	
 	ziel << filecontent;
@@ -1347,7 +1347,7 @@ void printFile(string filename)
 	string line;
 
 	ziel.open(filename);
-	if (!ziel) { printf("asciidatei konnte nicht geöffnet werden!\n"); exit(-1); }
+	if (!ziel) { printf("asciidatei konnte nicht geÃ¶ffnet werden!\n"); exit(-1); }
 
 	while (getline(ziel, line))
 	{
@@ -1366,7 +1366,7 @@ int main()
 
 	while (running)
 	{
-		cout << "Welches Wort möchten Sie als Ascii-Big dargestellt haben? Leere Eingabe=Programmabruch" << endl;
+		cout << "Welches Wort mÃ¶chten Sie als Ascii-Big dargestellt haben? Leere Eingabe=Programmabruch" << endl;
 		getline(cin, toBigAscii);
 
 		if (toBigAscii.length() > 0)
@@ -1409,7 +1409,7 @@ void example()
 	string asciiCode = createBigAscii("Welcome To Zwen's Ascii-Big Creator");
 	AsciiToFile(asciiCode);
 
-	//printFile("c://users//sven//desktop//asciiii.asc");
+	
 }
 
 
